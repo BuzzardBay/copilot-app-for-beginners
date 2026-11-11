@@ -156,8 +156,8 @@ select {
 
 .book-card {
   display: grid;
-  gap: 14px;
-  padding: 22px;
+  gap: 16px;
+  padding: 24px;
   border-radius: 24px;
 }
 
@@ -168,10 +168,15 @@ select {
   gap: 12px;
 }
 
+.book-card__header > div {
+  min-width: 0;
+}
+
 .book-card h2 {
   margin: 0;
   color: #111827;
   font-size: 1.3rem;
+  overflow-wrap: anywhere;
 }
 
 .book-card__author {
@@ -183,6 +188,7 @@ select {
   display: inline-grid;
   width: 32px;
   height: 32px;
+  flex: 0 0 32px;
   place-items: center;
   border-radius: 999px;
   color: #92400e;
@@ -202,6 +208,7 @@ select {
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .status--read {
@@ -257,6 +264,10 @@ select {
 
   .hero {
     padding: 24px;
+  }
+
+  .book-card {
+    padding: 18px;
   }
 
   .stats,
